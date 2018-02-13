@@ -14,11 +14,13 @@ Copy the link with the reset password into your browser and reset the password. 
 
 Loggin to the server with
 ```
-ssh root@192.168.46.46
-...
-and run barracuda up-stable 
-
+vagrant ssh
 ``` 
+and run
+```
+barracuda up-stable
+``` 
+
 You should receve an email with the o1 details including ftp logging. If you did not get the email you need to reset the o1.ftp user password. Logging as root and reset the password with the command:
 ```
 passwd o1.ftp
