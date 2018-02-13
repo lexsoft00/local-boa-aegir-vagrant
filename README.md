@@ -16,7 +16,12 @@ Loggin to the server with
 ```
 vagrant ssh
 ``` 
-and run
+add a DNS entry at the BOA **/etc/hosts** file:
+
+```
+127.0.1.1 aegir.local o1.sub.aegir.local chive.aegir.local
+```
+Save the file and run the command: 
 ```
 barracuda up-stable
 ``` 
