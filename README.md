@@ -28,6 +28,7 @@ Don't forget to change permissions of the .ssh folder and file after inserting t
 ```
 chmod 600 ~/.ssh/authorized_keys and chmod 700 ~/.ssh
 ``` 
+Check out Quick Start Distribution, works really good with Aegir Hosting  **[Installing Quick Start](https://www.drupal.org/project/quick_start)**.
 
 ## Basic steps
 1. Read all the instructions here before starting.
