@@ -1,12 +1,13 @@
 ## Before Installing
 1. Read the Basic Steps bellow.
 2. Have a ssh key into your home directory. Boa Installer is going to change the root password and remove all access, you need a ssh key to get into the server after install.
-3. Setup and email in scripts/install_boa_master.sh file
-
+3. Change the email 'hostmaster@aegir.local' in scripts/install_boa_master.sh file to your email.
+```
+boa in-stable local hostmaster@aegir.local mini
+``` 
 ## To Start the installer
 ```
 vagrant up
-
 ``` 
 ## After the installer finish 
 Copy the link with the reset password into your browser and reset the password. If you forget, you can have it resend to the email from the scripts/install_boa_master.sh file
