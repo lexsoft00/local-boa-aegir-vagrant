@@ -37,7 +37,7 @@ Vagrant.configure("2") do |config|
   # Disables the vagrant generated key.
   # Uncomment if you only want access via user's key.
 
-  config.ssh.insert_key = false
+  config.ssh.insert_key = true
   config.ssh.username = "root"
   config.ssh.password = 'vagrant'
 
