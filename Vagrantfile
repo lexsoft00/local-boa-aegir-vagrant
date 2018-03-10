@@ -53,7 +53,7 @@ Vagrant.configure("2") do |config|
   # using a specific IP.
   # Example of local ip: 192.168.44.42
   
-  config.vm.network "private_network", ip: "192.168.46.46"
+  config.vm.network "private_network", ip: "192.168.47.47"
   # plugin https://github.com/cogitatio/vagrant-hostsupdater
 
   # Copy ssh key to root
@@ -62,9 +62,13 @@ Vagrant.configure("2") do |config|
   inline: "echo \"#{id_rsa_pub}\" >> /root/.ssh/authorized_keys"
   # Run Boa Installer
   config.vm.provision 'shell', path: "scripts/install_boa_master.sh"
+  # Run Xdebug Installer
+  config.vm.provision 'shell', path: "scripts/install_xdebug.sh"
+  # Change Memory Limit to 1024M
+  config.vm.provision 'shell', path: "scripts/memory_limit.sh", run: 'always'
   # Provider-specific configuration so you can fine-tune various backing providers for Vagrant.
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "Aegir BOA LOCAL"
+    vb.name = "Aegir BOA 47.47"
     vb.memory = "3072"
     vb.cpus = 3
   end
