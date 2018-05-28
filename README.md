@@ -47,11 +47,11 @@ Check out **[Quick Start](https://www.drupal.org/project/quick_start)** Distribu
 7. Do NOT use [Vagrant Synced folders](http://docs.vagrantup.com/v2/synced-folders/basic_usage.html). You could use **nfs** with **vagrant-bindfs** so you can change owner/permissions but I recommend you to not sync files at all with Vagrant. You may have a too many problems with permissions and owner of folders. Use **sftp** instead. If you insist to use nfs you should only sync the folders of /modules, /themes, /libraries of each project and not the folders of group www-data.
 8. Add the BOA entries to your **hosts** file (eg for Debian, /etc/hosts). You may also use a vagrant plugin like https://github.com/cogitatio/vagrant-hostsupdater to do this automatically.
 ```
-# Local BOA running on host ip 192.168.46.46
-192.168.46.46 aegir.local
-192.168.46.46 sub.aegir.local
-192.168.46.46 o1.sub.aegir.local
-192.168.46.46 chive.aegir.local
+# Local BOA running on host ip 192.168.47.47
+192.168.47.47 aegir.local
+192.168.47.47 sub.aegir.local
+192.168.47.47 o1.sub.aegir.local
+192.168.47.47 chive.aegir.local
 ```
 ## Optional steps
 1. Disable **changing passwords** after every update. See how to at https://github.com/omega8cc/boa/blob/master/docs/ctrl/system.ctrl.
